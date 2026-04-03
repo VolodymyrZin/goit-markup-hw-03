@@ -115,8 +115,6 @@ nav a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /* margin-top: 48px;
-  margin-bottom: 116px; */
   min-width: 169px;
   height: 56px;
   border: none;
@@ -138,18 +136,10 @@ nav a {
   justify-content: center;
   gap: 24px;
   padding: 120px 156px;
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
 }
 .features-item {
   width: calc((100% - 72px) / 4);
 }
-/* .features-item:first-child {
-  margin-left: 156px;
-}
-.features-item:last-child {
-  margin-right: 156px;
-} */
 .features-subtitle {
   color: #2e2f42;
   font-size: 20px;
@@ -229,11 +219,10 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
-  gap: 24px;
+  column-gap: 24px;
 }
 .portfolio-li {
   width: calc((100% - 48px) / 3);
-  margin-bottom: 48px;
 }
 
 .portfolio-title {
