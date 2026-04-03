@@ -7,13 +7,20 @@ body {
 ul,
 li {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
 }
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .page-header {
   background-color: #e7e9fc;
+  border-bottom: 1px solid #ffffff;
 }
 .logo-web {
   color: #4d5ae5;
@@ -40,8 +47,30 @@ a {
 .nav-link:focus {
   color: #404bbf;
 }
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav ul {
+  display: flex;
+  gap: 40px;
+  padding-left: 76px;
+}
+nav a {
+  display: block;
+}
+.page-header .container {
+  display: flex;
+  justify-content: space-between; /* логотип зліва, меню по центру, контакти справа */
+  align-items: center; /* вирівнює по вертикалі */
+}
 .contacts {
   font-style: normal;
+}
+.contacts ul {
+  display: flex;
+  gap: 40px;
 }
 .contact-link {
   color: #434455;
@@ -67,6 +96,7 @@ a {
   letter-spacing: 0.02em;
   font-weight: 700;
   text-align: center;
+  padding-top: 260px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .hero-button {
@@ -78,7 +108,12 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 48px;
+  margin-bottom: 116px;
+  width: 169px;
+  height: 56px;
 }
+
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
@@ -87,6 +122,23 @@ a {
 .features {
   background-color: #ffffff;
 }
+.features .container > ul {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 120px 156px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+}
+.features-item {
+  width: 264px;
+}
+/* .features-item:first-child {
+  margin-left: 156px;
+}
+.features-item:last-child {
+  margin-right: 156px;
+} */
 .features-subtitle {
   color: #2e2f42;
   font-size: 20px;
@@ -105,9 +157,12 @@ a {
 }
 .team {
   background-color: #f4f4fd;
-  text-align: center;
 }
 
+.team .container ul {
+  display: flex;
+  gap: 24px;
+}
 .team-title {
   color: #2e2f42;
   font-size: 36px;
@@ -115,10 +170,14 @@ a {
   line-height: 1.11;
   text-transform: capitalize;
   letter-spacing: 0.02em;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 72px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .team-item {
   background-color: #ffffff;
+  text-align: center;
 }
 .team-subtitle {
   color: #2e2f42;
@@ -137,10 +196,26 @@ a {
   letter-spacing: 0.02em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.truble-photo {
+  width: 264px;
+  height: 110px;
+  object-fit: cover;
+  object-position: top;
+}
 .portfolio {
   background-color: #ffffff;
   text-align: center;
 }
+.portfolio .container > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.portfolio .container > ul li {
+  width: calc((100% - 48px) / 3);
+  margin-bottom: 48px;
+}
+
 .portfolio-title {
   color: #2e2f42;
   font-size: 36px;
@@ -149,6 +224,8 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .portfolio-subtitle {
@@ -170,10 +247,23 @@ a {
   text-align: left;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.frame {
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+}
 .page-footer {
   background-color: #2e2f42;
 }
-
+.page-footer .container {
+  width: 264px;
+  margin-left: 156px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.page-footer .container p {
+  padding-top: 16px;
+}
 .page-footer-span {
   color: #f4f4fd;
 }
@@ -184,4 +274,39 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
