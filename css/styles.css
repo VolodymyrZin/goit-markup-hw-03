@@ -30,10 +30,9 @@ section {
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  /* margin-right: 76px; */
+  margin-right: 76px;
   display: inline-block;
   height: 24px;
-  margin-bottom: 16px;
 }
 .page-header-span {
   color: #2e2f42;
@@ -111,7 +110,6 @@ nav a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
   min-width: 169px;
   height: 56px;
   border: none;
@@ -244,6 +242,9 @@ nav a {
 .page-footer {
   background-color: #2e2f42;
   padding: 100px 0;
+}
+.page-footer .logo-web {
+  margin-bottom: 16px;
 }
 .page-footer-span {
   color: #f4f4fd;
